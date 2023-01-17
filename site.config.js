@@ -1,35 +1,35 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: 'morethanmin',
-    image: '/avatar.svg',  // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: 'frontend developer',
-    bio: 'I develop everything using node.',
-    email: 'morethanmin.dev@gmail.com',
-    linkedin: 'morethanmin',
-    github: 'morethanmin',
-    instagram: '',
+    name: "minje",
+    image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    role: "frontend developer",
+    bio: "I develop everything using node.",
+    email: "minje.tsx@gmail.com",
+    linkedin: "민제-강-084727262",
+    github: "minjekang",
+    instagram: "",
   },
   projects: [
     {
       name: `morethanmin's blog`,
-      href: 'https://morethanmin.com'
-    }
+      href: "https://morethanmin.com",
+    },
   ],
   // blog setting (required)
   blog: {
-    title: 'morethan-log',
-    description: 'welcome to morethan-log!',
-    theme: 'light' // ['light', 'dark', 'auto']
+    title: "minje-log",
+    description: "welcome to minje-log!",
+    theme: "auto", // ['light', 'dark', 'auto']
   },
 
   // CONFIG configration (required)
-  link: 'https://morethan-log.vercel.app',
+  link: "https://minje-log.vercel.app",
   since: 2022, // If leave this empty, current year will be used.
-  lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
-  ogImageGenerateURL: 'https://og-image-korean.vercel.app', // The link to generate OG image, don't end with a slash
+  lang: "ko-KR", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
+  ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
   seo: {
-    keywords: ['Blog', 'Website', 'Notion'],
+    keywords: ["Blog", "Website", "Notion"],
   },
 
   // notion configuration (required)
@@ -41,23 +41,23 @@ const CONFIG = {
   googleAnalytics: {
     enable: false,
     config: {
-      measurementId: process.env.GOOGLE_MEASUREMENT_ID || ''
-    }
+      measurementId: process.env.GOOGLE_MEASUREMENT_ID || "",
+    },
   },
   googleSearchConsole: {
     enable: false,
     config: {
-      siteVerification: process.env.GOOGLE_SITE_VERIFICATION || ''
-    }
+      siteVerification: process.env.GOOGLE_SITE_VERIFICATION || "",
+    },
   },
   utterances: {
     enable: true,
     config: {
-      repo: 'morethanmin/morethan-log',
-      'issue-term': 'og:title',
-      label: '💬 Utterances',
-    }
+      repo: "minjekang/minje-log",
+      "issue-term": "og:title",
+      label: "💬 Utterances",
+    },
   },
-  isProd: process.env.VERCEL_ENV === 'production' // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
+  isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
 }
 module.exports = CONFIG
